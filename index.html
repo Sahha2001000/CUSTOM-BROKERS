@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="xyz">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,17 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>CUSTOM-BROKERS</title>
 </head>
+
 <body>
     <header class="header">
         <div class="container">
             <div class="header__inner">
                 <div class="header__menu">
                     <ul class="header__menu-list">
-                        <li class="header__menu-item"><a href="#">Чому ми</a></li>
-                        <li class="header__menu-item"><a href="#">Ми працюємо з</a></li>
-                        <li class="header__menu-item"><a href="#">Наші переваги</a></li>
-                        <li class="header__menu-item"><a href="#">Як відбувається співпраця</a></li>
-                        <li class="header__menu-item"><a href="#">Контакти</a></li>
+                        <li class="header__menu-item"><a href="#why-we">Чому ми</a></li>
+                        <li class="header__menu-item"><a href="#preference">Наші переваги</a></li>
+                        <li class="header__menu-item"><a href="#cooperation">Як відбувається співпраця</a></li>
+                        <li class="header__menu-item"><a href="#contacts">Контакти</a></li>
                     </ul>
                     <div class="header__phone">
                         <div class="header__phone-title">
@@ -40,7 +41,7 @@
             </div>
         </div>
     </header>
-    <section class="why-we">
+    <section class="why-we" id="why-we">
         <div class="container">
             <div class="why-we__inner">
                 <div class="why-we__head">
@@ -99,8 +100,7 @@
             </div>
         </div>
     </section>
-
-    <section class="preference">
+    <section class="preference" id="preference">
         <div class="container">
             <div class="preference__inner">
                 <div class="preference__inner">
@@ -135,13 +135,15 @@
                         </div>
 
                         <div class="preference-item">
-                            <img src="img/represent_your_interests_on_the_railway.jpg" alt="represent_your_interests_on_the_railway">
+                            <img src="img/represent_your_interests_on_the_railway.jpg"
+                                alt="represent_your_interests_on_the_railway">
                             <div class="preference-item-title">
                                 Представляємо ваші інтереси на залізниці
                             </div>
                         </div>
                         <div class="preference-item">
-                            <img src="img/сustoms_clearance_of_goods_ralliway.png" alt="сustoms_clearance_of_goods_ralliway">
+                            <img src="img/сustoms_clearance_of_goods_ralliway.png"
+                                alt="сustoms_clearance_of_goods_ralliway">
                             <div class="preference-item-title">
                                 Розмитнення вантажів, що прямують залізницею
                             </div>
@@ -163,7 +165,7 @@
             </div>
         </div>
     </section>
-    <section class="cooperation">
+    <section class="cooperation" id="cooperation">
         <div class="container">
             <div class="cooperation__inner">
                 <div class="cooperation-title">
@@ -198,11 +200,76 @@
             </div>
         </div>
     </section>
+
+    <section class="contact-form" id="contacts">
+        <div class="container">
+            <div class="contact-form__inner">
+                <div class="contact-form__block">
+                    <div class="contact-form__title">
+                        Отримайте безкоштовну консультацію
+                    </div>
+                    <div class="contact-form__subtitle">
+                        Залиште свої контакти і ми Вам передзвонимо
+                    </div>
+                    <form class="form" method="post" id="form">
+                        <div class="form__item">
+                            <input class="form__input" placeholder="Ім’я" type="text" name="name" required>
+                            <input class="form__input" placeholder="Номер телефону" type="text" name="phone" required>
+                        </div>
+                        <input class="form__input btn" type="submit" value="ЗАЛИШИТИ ЗАЯВКУ">
+                        <input type="hidden" name="act" value="order">
+                    </form>
+                    <div class="or">
+                        АБО
+                    </div>
+                    <div class="contacts">
+                        <div class="contacts-title">
+                            ТЕЛЕФОНУЙТЕ ЗА НОМЕРОМ
+                        </div>
+                        <a href="tel:380975488567">+38 (097) 548 85 67</a>
+                        <a href="tel:380633187018">+38 (063) 318 70 18</a>
+                        <a href="mailto:custombrokerage3@gmail.com">custombrokerage3@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer">
         <div class="container">
             <div class="footer__inner">
-
-
+                <div class="footer__block1">
+                    <div class="footer__block1-title">
+                        <span>CUSTOM</span> — BROKERS
+                    </div>
+                    <div class="footer__block1-descr">
+                        Київська митниця,Північна митниця, Поліська митниця, Волинська митниця, Енергетична митниця,
+                        Слабожанська митниця
+                    </div>
+                </div>
+                <div class="footer_block2">
+                    <div class="viber-ico">
+                        <img src="" alt="viber-ico">
+                    </div>
+                    <div class="tel_numbers">
+                        <a href="tel:380975488567"> +38 (097) 548 85 67 </a>
+                        <a href="tel:380633187018"> +38 (063) 318 70 18 </a>
+                    </div>
+                    <div class="office_location">
+                        м. Коростень, вул. Київська, буд. 21а.
+                    </div>
+                    <div class="time-working">
+                        пн.- вс:<span> з 09.00 до 21.00</span>
+                    </div>
+                </div>
+                <div class="footer_block3">
+                    <ul>
+                        <li class="header__menu-item"><a href="#why-we">Чому ми</a></li>
+                        <li class="header__menu-item"><a href="#preference">Наші переваги</a></li>
+                        <li class="header__menu-item"><a href="#cooperation">Як відбувається співпраця</a></li>
+                        <li class="header__menu-item"><a href="#contacts">Контакти</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
