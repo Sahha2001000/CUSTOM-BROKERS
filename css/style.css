@@ -41,8 +41,7 @@ body {
 /*header start*/
 
 .header {
-    background-image: url(../img/header_img.png);
-    height: 480px;
+    min-height: 480px;
     background-image: url(../img/header_img.png);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -65,23 +64,24 @@ body {
 .header__menu-list {
     display: flex;
     align-items: center;
+   
 }
 
 .header__menu-item {
+    font-size: 17px;
     margin-right: 20px;
 }
 
 .header__phone {
-    font-size: 18px;
+    font-size: 20px;
 }
 
-.header__phone-title {
-    text-align: end;
+.header__burger{
+    display: none;
 }
 
-/* animate */
 
-.header__menu-item a:hover, .header__phone a:hover {
+.footer__menu-item a:hover,.header__menu-item a:hover, .header__phone a:hover {
     transition: all 0.6s ease-out;
     color: #ff8080;
 }
@@ -134,7 +134,7 @@ body {
 
 .why-we__descr {
     font-size: 20px;
-    width: 615px;
+    max-width: 615px;
     margin: 0 auto;
 }
 
@@ -317,8 +317,6 @@ body {
 
 /*contact-form start*/
 
-.contact-form {}
-
 .contact-form__inner {
     height: 700px;
     display: flex;
@@ -456,7 +454,7 @@ body {
     color: #cdcdcd;
 }
 
-.footer_block2 {
+.footer__block2 {
     color: rgb(47, 80, 153);
     width: 300px;
     font-size: 13px;
@@ -471,6 +469,7 @@ body {
     line-height: 1;
     display: inline-block;
 }
+
 .viber-ico::after {
     position: absolute;
     content: url('../img/viber.png');
@@ -481,20 +480,12 @@ body {
     font-size: 13px;
 }
 
-.office_location {}
-
-.time-working {}
-
 .time-working span {
     color: #fff;
 }
 
-.footer_block3 {}
-
-.header__menu-list {}
-
-.header__menu-item a {
-    font-size: 13px;
+.footer__menu-item,.header__menu-item a {
+    font-size: 20px;
 }
 
 /*footer end*/

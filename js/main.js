@@ -1,3 +1,11 @@
+//byrger menu
+$(document).ready(function() {
+    $(document).ready(function () {
+        $('.header__burger').click(function () {
+            $('.header__menu-list').slideToggle('');
+        });
+    });
+});
 
 // AJAX for contact-form
 (function ($) {
