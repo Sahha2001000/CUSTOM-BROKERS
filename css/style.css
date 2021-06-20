@@ -111,8 +111,8 @@ body {
 /*why-we start*/
 
 .why-we {
-    margin: 150px 0;
-    padding-top:10px ;
+    margin: 50px 0;
+    padding-top: 10px;
 }
 
 .why-we__inner {
@@ -165,7 +165,7 @@ body {
 /*preference start*/
 
 .preference {
-    padding-top: 100px;
+    padding-top: 50px;
     background-color: #edf0f5;
 }
 
@@ -216,7 +216,8 @@ body {
     background-image: url(../img/bg_steps.png);
     background-repeat: no-repeat;
     background-position: center;
-    height: 400px;
+    background-size: cover;
+    height: 500px;
 }
 
 .cooperation-title {
@@ -224,7 +225,7 @@ body {
     font-size: 26px;
     font-weight: 700;
     text-align: center;
-    padding-top: 25px;
+    padding-top: 50px;
     text-transform: uppercase;
 }
 
@@ -312,8 +313,6 @@ body {
     margin-bottom: 35px;
 }
 
-
-
 /*cooperation end*/
 
 /*contact-form start*/
@@ -399,82 +398,105 @@ body {
 .contacts {
     margin-top: 25px;
 }
-.contacts-title{
+
+.contacts-title {
     font-weight: 700;
     font-size: 20px;
     text-transform: 20px;
     margin-bottom: 25px;
 }
+
 .contacts a {
     display: flex;
     justify-content: center;
     margin: 0 auto;
 }
+
 .contacts a:hover {
     transition: all 0.6s ease-out;
     color: #ff8080;
 }
 
 /*contact-form end*/
+
 /*footer start */
 
-  
 .footer {
     background-color: rgb(30, 30, 30);
-   
 }
 
 .footer__inner {
-    height: 211px;
+    height: 280px;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 100px;
 }
 
-  
 .footer__block1 {
     width: 280px;
 }
+
 .footer__block1-title {
     font-style: italic;
     font-weight: 700;
     text-align: left;
     font-size: 12px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     color: #fff;
 }
-.footer__block1-title span{
+
+.footer__block1-title span {
     color: rgb(47, 80, 153);
 }
+
 .footer__block1-descr {
     font-size: 11px;
-    line-height:11px ;
+    line-height: 11px;
     color: #cdcdcd;
 }
+
 .footer_block2 {
     color: rgb(47, 80, 153);
     width: 300px;
     font-size: 13px;
 }
+
 .viber-ico {
+    width: 40px;
+    height: 20px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    display: inline-block;
 }
-.tel_numbers a{
+.viber-ico::after {
+    position: absolute;
+    content: url('../img/viber-brands.svg');
+    width: 20px;
+    height: 20px;
+}
+
+.tel_numbers a {
     display: block;
     font-size: 13px;
-    
 }
-.office_location {
-}
-.time-working {
-}
-.time-working span{
+
+.office_location {}
+
+.time-working {}
+
+.time-working span {
     color: #fff;
 }
-.footer_block3 {
+
+.footer_block3 {}
+
+.header__menu-list {}
+
+.header__menu-item a {
+    font-size: 13px;
 }
-.header__menu-list {
-}
-.header__menu-item a{
-font-size: 13px;
-}
+
 /*footer end*/
