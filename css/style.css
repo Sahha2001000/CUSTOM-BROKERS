@@ -473,9 +473,7 @@ body {
 }
 .viber-ico::after {
     position: absolute;
-    content: url('../img/viber-brands.svg');
-    width: 20px;
-    height: 20px;
+    content: url('../img/viber.png');
 }
 
 .tel_numbers a {
