@@ -1,6 +1,6 @@
 
 //burger menu
-$(document).ready(function() {
+$(document).ready(function () {
     $(document).ready(function () {
         $('.header__burger').click(function () {
             $('.header__menu-list').slideToggle('');
@@ -17,6 +17,7 @@ $(document).ready(function() {
         // Сохраняем в переменную класс с параграфом для вывода сообщений
         let message = $(this).find(".form__item");
         let fd = new FormData(form);
+
         $.ajax({
             url: "/php/sendMsgTG.php",
             type: "POST",
@@ -25,12 +26,29 @@ $(document).ready(function() {
             contentType: false,
             success: function success() {
                 let respond = true
+                let counter = 2;
                 if (!respond) {
                     alert('Щось пішло не так. Спробуйте відправити форму ще раз.');
                 } else {
-                    alert('Дякую! Ваша заявка прийнята. Ми зв\'яжемося з вами найближчим часом.');
+                    const btn = document.getElementById('btn');
+                    document.getElementById('name').value = ""
+                    document.getElementById('phone').value = ""
+                    btn.style.background = '#32CD32'
+                    btn.value = "Заявку відправлено!"
+                    let status = setInterval(function () {
+                        if (counter === 2) {
+                            btn.style.background = '#2F6299'
+                            btn.style.color = '#ffffff'
+                            btn.value = "ЗАЛИШИТИ ЗАЯВКУ"
+                            clearInterval(status);
+                        }
+
+                        console.log(counter)
+                        counter++;
+                    }, 4000);
                 }
             },
         });
     });
 }(jQuery));
+
