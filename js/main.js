@@ -1,4 +1,5 @@
-//byrger menu
+
+//burger menu
 $(document).ready(function() {
     $(document).ready(function () {
         $('.header__burger').click(function () {
