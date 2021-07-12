@@ -180,4 +180,4 @@
         }
     });
 });
-$("#phone").mask("+380 (999) 999 99-99",{autoclear: false});
+$("#phone").mask("+380 (999) 99 99-99",{autoclear: false});
