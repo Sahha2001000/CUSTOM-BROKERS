@@ -11,7 +11,7 @@
     }
 }
 
-@media (max-width:1031px) {
+@media (max-width:1115px) {
     .header__menu {
         justify-content: space-between;
     }
@@ -100,7 +100,7 @@
     }
 }
 
-@media(min-width:1031px) {
+@media(min-width:1115px) {
     .header__menu-list {
         display: flex !important;
     }
